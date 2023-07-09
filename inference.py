@@ -92,7 +92,7 @@ def main(vidPath=None, weightsPath=None, csvPath=None):
     for abs in absent_names:
         print(f"{abs.replace('_', ' ').title()} is absent.")
 
-    p = postman(host='smtp.gmail.com', auth=('awaisnawaz2000@gmail.com', 'fbcabwnopmdugkhx'))
+    p = postman(host='smtp.gmail.com', auth=('awaisnawaz2000@gmail.com', '<YOUR_API_KEY>'))
     r = p.send(email(
             content=u'<p>This user is absent</p>',
             subject='Absentee Report',
