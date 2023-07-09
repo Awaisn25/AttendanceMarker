@@ -94,7 +94,7 @@ def main(vidPath=None, weightsPath=None, csvPath=None):
 
     p = postman(host='smtp.gmail.com', auth=('awaisnawaz2000@gmail.com', '<YOUR_API_KEY>'))
     r = p.send(email(
-            content=u'<p>This user is absent</p>',
+            content=u'<p>You were absent</p>',
             subject='Absentee Report',
             sender='Awais <awaisnawaz2000@gmail.com>',
             receivers=absentees,
