@@ -22,6 +22,8 @@ Please keep your iamges in this format, and the folder should be named according
 ### ```collections``` library
 when importing the ```mailthon``` library, if you get an ImportError regarding the ```collection``` library as shown below:
 ![Error in ```collections``` library.](/figs/emailError.png)
+
 This is an internal library error for higher versions of Python, you can fix this by editing the ```helper.py``` file and importing ```MutableMapping``` from ```collections.abc```.
+
 ![Error fix.](/figs/emailError_solution.png)
 
